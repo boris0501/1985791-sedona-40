@@ -2,7 +2,7 @@
 
 * Студент: [борис колышкин](https://up.htmlacademy.ru/htmlcss/40/user/1985791).
 * Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/id1462895).
-
+* Ссылка на проект: (https://github.com/boris0501/1985791-sedona-40)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
