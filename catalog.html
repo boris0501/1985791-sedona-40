@@ -6,7 +6,7 @@
   <title>Каталог гостиниц Седоны</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип городка Седона">
@@ -37,10 +37,10 @@
       </a>
     </nav>
   </header>
-  <main class="main-inner">
+  <main class="main-inner" data-test="main">
   <div class="container">
     <div class="filter-container">
-      <header class="catalog-header">
+      <header class="catalog-header" data-test="header">
         <h1 class="catalog-header-title">
           Гостиницы Седоны
         </h1>
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </header>
-      <section class="hotel-filter">
+      <section class="hotel-filter" data-test="filter">
         <h2 class="visually-hidden" hidden>Фильтры отелей</h2>
 
         <form class="filter-catalog" action="https://echo.htmlacademy.ru" method="get">
@@ -111,7 +111,7 @@
         </form>
       </section>
     </div>
-      <section class="hotel-catalog">
+      <section class="hotel-catalog" data-test="catalog">
         <div class="catalog-select-group">
         <h2 class="catalog-title">Найдено гостиниц: <output>38</output></h2>
         <select class="catalog-select">
@@ -183,7 +183,7 @@
           <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
         </ul>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
@@ -195,7 +195,7 @@
 
     </div>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="page-footer-container">
     <ul class="social-list">
       <li class="social-item">
