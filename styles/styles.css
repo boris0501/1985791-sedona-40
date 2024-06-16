@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 117%;
+  color: #000;
+  background-color: #fff;
+}
+.page-header {
+  color: #000;
+  background-color: #fff;
+}
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+.navigation-user-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+.navigation-header-button {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+text-align: center;
+color:#fff;
+background-color: #756157;
+}
+.hero {
+  background-image: url("../img/main/hero-background.jpg");
+  background-size: 100% auto;
+  background-color: #fff;
+}
+.container {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #333;
+}
+.advantages {
+  text-align: center;
+}
+.section-title {
+font-family: inherit;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+}
+.section-subtitle {
+font-family: inherit;
+font-weight: 400;
+font-size: 22px;
+line-height: 118%;
+text-align: center;
+}
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-colored {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-extended {
+  background-color: #82b3d3;
+}
+.advantages-item-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 117%;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+}
+.advantages-item-description {
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+text-align: center;
+color: #333;
+}
+.advantages-item-extended > .advantages-item-title {
+  color: #fff;
+}
+.advantages-item-extended > .advantages-item-description {
+  color: #fff;
+}
+.features-list {
+  background-color: #fff;
+}
+.features-item-colored {
+  background-color: rgba(131, 179, 211, 0.12);;
+}
+.features-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 117%;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+}
+.features-recommend {
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+text-align: center;
+color: #333;
+}
+.search {
+  background-color: #fff;
+}
+.search-button {
+  font-family: inherit;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+.subscription {
+  background-color: #fff;
+}
+.subscription-colored {
+  background-image: url("../img/main/Subscribe-background.png");
+ background-size: 100% auto;
+ background-repeat: no-repeat;
+  background-color: #fff;
+}
+.subscription-colored > .section-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 120%;
+text-transform: uppercase;
+color: #fff;
+}
+.subscription-colored > .section-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #fff;
+  }
+.subscription-button {
+  background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  }
+  .phone-link {
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+color: #000;
+  }
+  .filter-container {
+    background-image: url("../img/catalog/filter-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  color: #fff;
+  }
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  text-decoration: none;
+  color: #fff;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #fff;
+}
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 128%;
+  color: #fff;
+}
+.filter-button {
+  font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
+.active-filter-button {
+  background-color:#82b3d3;
+}
+.hotel-catalog {
+  background-color: #fff;
+}
+.catalog-title {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000;
+}
+.catalog-card-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 117%;
+text-transform: capitalize;
+text-decoration: none;
+color: #000;
+}
+.card-description {
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+color: #333;
+}
+.card-price {
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+text-align: right;
+color: #333;
+}
+.button-detailed {
+  font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+color: #fff;
+background-color:  #756157;
+}
+.favourite-card {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+  background-color: #82b3d3;
+}
+.card-rating {
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+text-transform: uppercase;
+text-align: center;
+color: #333;
+background-color: #f2f2f2;
+}
+.favourite-card-selected {
+font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+  background-color: #7db54f;
+}
+.pagination-link {
+font-weight: 700;
+font-size: 20px;
+line-height: 180%;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+color: #fff;
+background-color: #82b3d3;
+}
+.pagination-link-current {
+  color: #000;
+  background-color: #f2f2f2;
+}
