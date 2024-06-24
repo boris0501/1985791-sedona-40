@@ -13,16 +13,51 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 117%;
-  color: #000;
-  background-color: #fff;
+  font-size: 22px;
+  line-height: 26зч;
+  color: #333;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 .page-header {
   color: #000;
   background-color: #fff;
+}
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 390px;
+}
+.navigation-logo {
+  width: 138px;
+  margin-right: 46px;
+}
+.navigation-user {
+  width: 290px;
+  margin-left: auto;
+}
+.navigation-item {
+  list-style: none;
+}
+.navigation-user-item {
+  list-style: none;
 }
 .navigation-link {
   font-size: 20px;
@@ -52,12 +87,17 @@ text-align: center;
 color:#fff;
 background-color: #756157;
 }
+.main-container {
+  flex-grow: 1;
+}
 .hero {
   background-image: url("../img/main/hero-background.jpg");
   background-size: 100% auto;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 .container {
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
   background-color: #f2f2f2;
   color: #333;
@@ -73,6 +113,8 @@ line-height: 36px;
 text-transform: uppercase;
 text-align: center;
 color: #000;
+padding: 69px;
+margin-bottom: 25px;
 }
 .section-subtitle {
 font-family: inherit;
@@ -80,14 +122,26 @@ font-weight: 400;
 font-size: 22px;
 line-height: 118%;
 text-align: center;
+padding: 69px;
+margin-bottom: 69px;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
+  list-style: none;
+  width: 400px;
 }
 .advantages-item-colored {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .advantages-item-extended {
+
   background-color: #82b3d3;
 }
 .advantages-item-title {
@@ -112,7 +166,16 @@ color: #333;
   color: #fff;
 }
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   background-color: #fff;
+}
+.features-item {
+  width: 400px;
+  list-style: none;
+  text-align: center;
 }
 .features-item-colored {
   background-color: rgba(131, 179, 211, 0.12);;
@@ -151,7 +214,7 @@ color: #333;
 }
 .subscription-colored {
   background-image: url("../img/main/Subscribe-background.png");
- background-size: 100% auto;
+ background-size: cover;
  background-repeat: no-repeat;
   background-color: #fff;
 }
@@ -178,25 +241,46 @@ color: #fff;
   text-align: center;
   color: #fff;
   }
+  .page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .social-list {
+    width: 142px;
+    margin-right: 41px;
+  }
+  .social-item {
+    list-style: none;
+  }
   .phone-link {
-font-weight: 400;
-font-size: 40px;
-line-height: 40px;
-text-transform: uppercase;
-text-decoration: none;
-text-align: center;
-color: #000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  width: 720px;
+  margin-right: 41px;
+  }
+  .author-logo {
+    width: 115px;
+    margin-left: auto;
   }
   .filter-container {
     background-image: url("../img/catalog/filter-background.png");
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   }
   .catalog-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 130%;
   color: #fff;
+  }
+  .breadcrumbs-list-item {
+    list-style: none;
   }
 .breadcrumbs-link {
   font-weight: 400;
@@ -205,12 +289,18 @@ color: #000;
   text-decoration: none;
   color: #fff;
 }
+.catalog-filter-list {
+  display: flex;
+}
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   text-transform: capitalize;
   color: #fff;
+}
+.catalog-filter-item {
+  list-style: none;
 }
 .control {
   font-weight: 400;
@@ -232,6 +322,9 @@ color: #fff;
 }
 .hotel-catalog {
   background-color: #fff;
+}
+.catalog-card {
+  list-style: none;
 }
 .catalog-title {
 font-weight: 700;
@@ -299,6 +392,9 @@ text-transform: uppercase;
 text-align: center;
 color: #fff;
   background-color: #7db54f;
+}
+.pagination-item {
+  list-style: none;
 }
 .pagination-link {
 font-weight: 700;
