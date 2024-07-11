@@ -487,24 +487,37 @@ color: #fff;
   background-color: #fff;
 }
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 1060px;
   margin: 0;
   padding: 0;
   margin-bottom: 68px;
 }
 .catalog-card {
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: auto 1fr;
+  gap: 16px 20px;
   list-style: none;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 20px;
-  width: 340px;
-  }
-  .catalog-card:last-child {
-    margin-top: 20px;
-  }
+
+}
+.catalog-card-image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.catalog-card-link {
+  grid-column: 1/-1;
+  text-decoration: none;
+}
 .catalog-title {
 font-weight: 700;
 font-size: 30px;
@@ -519,22 +532,24 @@ line-height: 117%;
 text-transform: capitalize;
 text-decoration: none;
 color: #000;
+text-align: left;
 }
 .card-description {
 font-weight: 400;
 font-size: 18px;
 line-height: 117%;
 color: #333;
+text-align: left;
 }
 .card-price {
 font-weight: 400;
 font-size: 18px;
 line-height: 117%;
-text-align: right;
 color: #333;
+text-align: right;
 }
 .button-detailed {
-  font-family: inherit;
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 125%;
@@ -543,6 +558,8 @@ text-decoration: none;
 text-align: center;
 color: #fff;
 background-color:  #756157;
+padding: 8px 26px;
+border-radius: 4px;
 }
 .favourite-card {
 font-family: inherit;
@@ -552,9 +569,12 @@ line-height: 125%;
 text-transform: uppercase;
 text-align: center;
 color: #fff;
-  background-color: #82b3d3;
+background-color: #82b3d3;
+border-radius: 4px;
 }
 .card-rating {
+display: flex;
+align-self: center;
 font-weight: 400;
 font-size: 16px;
 line-height: 125%;
@@ -562,6 +582,7 @@ text-transform: uppercase;
 text-align: center;
 color: #333;
 background-color: #f2f2f2;
+padding: 9px 22px 8px 23px;
 }
 .favourite-card-selected {
 font-weight: 700;
@@ -570,7 +591,8 @@ line-height: 125%;
 text-transform: uppercase;
 text-align: center;
 color: #fff;
-  background-color: #7db54f;
+background-color: #7db54f;
+border-radius: 4px;
 }
 .pagination {
   display: flex;
